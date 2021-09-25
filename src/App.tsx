@@ -81,19 +81,19 @@ function App() {
             <Button>Hire Us</Button>
           </FooterColumn>
           <FooterColumn>
-            <Text type={RenderType.Tagline}>About</Text>
+            <Text type={RenderType.Tagline}>ABOUT</Text>
             <Text>Why us</Text>
             <Text>Our values</Text>
             <Text>Playbook</Text>
           </FooterColumn>
           <FooterColumn>
-            <Text type={RenderType.Tagline}>Services</Text>
+            <Text type={RenderType.Tagline}>SERVICES</Text>
             <Text>Development</Text>
             <Text>Consulting</Text>
             <Text>Managed Services</Text>
           </FooterColumn>
           <FooterColumn>
-            <Text type={RenderType.Tagline}>Our Work</Text>
+            <Text type={RenderType.Tagline}>OUR WORK</Text>
             <Text>Case Studies</Text>
             <Text>Clients</Text>
             <Text>Blog</Text>
