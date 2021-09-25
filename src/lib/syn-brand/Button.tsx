@@ -27,6 +27,9 @@ const StyledButton = styled.div<{ center?: boolean }>`
   border-radius: 20px;
   align-self: ${({ center }) => (center ? "center" : "flex-start")};
   cursor: pointer;
+  @media (max-width: 768px) {
+    align-self: center;
+  }
 `;
 const styles = {
   button: {},

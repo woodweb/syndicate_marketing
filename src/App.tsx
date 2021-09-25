@@ -110,7 +110,7 @@ function App() {
 
 const Container = styled.div`
   font-family: "Raleway";
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 `;
@@ -123,6 +123,9 @@ const Header = styled.div`
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 200px;
+  }
 `;
 const HeaderContent = styled.div`
   flex-direction: row;
@@ -131,6 +134,10 @@ const HeaderContent = styled.div`
   display: flex;
   width: 80vw;
   max-width: 1200px;
+  @media (max-width: 768px) {
+    width: 96vw;
+    max-width: none;
+  }
 `;
 const HeaderNav = styled.div`
   justify-content: space-between;
@@ -139,6 +146,9 @@ const HeaderNav = styled.div`
   align-items: center;
   flex-wrap: nowrap;
   display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Logo = styled.img`
@@ -153,6 +163,9 @@ const Page = styled.div`
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 768px) {
+    width: 96vw;
+  }
 `;
 
 const Panel = styled.div<{ center?: boolean }>`
@@ -161,6 +174,9 @@ const Panel = styled.div<{ center?: boolean }>`
   flex-wrap: nowrap;
   display: flex;
   margin: 300px 0 0px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const PanelText = styled.div<{ right?: boolean }>`
@@ -169,13 +185,25 @@ const PanelText = styled.div<{ right?: boolean }>`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    text-align: center;
+  }
 `;
 
-const PanelHero = styled.div``;
+const PanelHero = styled.div`
+  @media (max-width: 768px) {
+    margin: 40px 0;
+  }
+`;
 
 const PanelHeroImage = styled.img`
   width: auto;
   height: 300px;
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: auto;
+  }
 `;
 
 const LogoList = styled.div`
@@ -190,7 +218,7 @@ const LogoList = styled.div`
 
 const Footer = styled.div`
   margin-top: 200px;
-  height: 500px;
+  min-height: 500px;
   background: #f4f4f4;
 
   padding-top: 100px;
@@ -204,12 +232,21 @@ const FooterContent = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const FooterLegal = styled(FooterContent)`
   margin-top: 140px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
 `;
 const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
 `;
 export default App;
