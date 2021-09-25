@@ -124,7 +124,7 @@ const Header = styled.div`
   display: flex;
   justify-content: center;
   @media (max-width: 768px) {
-    height: 200px;
+    height: 150px;
   }
 `;
 const HeaderContent = styled.div`
@@ -220,7 +220,6 @@ const Footer = styled.div`
   margin-top: 200px;
   min-height: 500px;
   background: #f4f4f4;
-
   padding-top: 100px;
 `;
 
